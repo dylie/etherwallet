@@ -50,6 +50,7 @@ var decryptWalletCtrl = function($scope, $sce, walletService) {
     hwMixPath: 'm/44\'/76\'/0\'/0', // first address: m/44'/76'/0'/0/0
     hwReoscPath: 'm/44\'/2894\'/0\'/0', // first address: m/44'/2894'/0'/0/0
     thundercorePath: 'm/44\'/1001\'/0\'/0', // first address: m/44'/1001'/0'/0/0
+    hwXeroPath: 'm/44\'/1313500\'/0\'/0', // first address: m/44'/1313500'/0'/0/0
   };
   $scope.canUseMewConnect = MewConnectEth.checkWebRTCAvailable();
   $scope.mewConnectMayFail = MewConnectEth.checkBrowser();
@@ -125,6 +126,9 @@ var decryptWalletCtrl = function($scope, $sce, walletService) {
         case nodes.nodeTypes.THUNDERCORE:
           $scope.HDWallet.dPath = $scope.HDWallet.thundercorePath;
           break;
+        case nodes.nodeTypes.XERO:
+          $scope.HDWallet.dPath = $scope.HDWallet.hwXeroPath;
+          break;
         default:
           $scope.HDWallet.dPath = $scope.HDWallet.ledgerPath;
       }
@@ -198,6 +202,9 @@ var decryptWalletCtrl = function($scope, $sce, walletService) {
           break;
         case nodes.nodeTypes.REOSC:
           $scope.HDWallet.dPath = $scope.HDWallet.hwReoscPath;
+          break;
+        case nodes.nodeTypes.XERO:
+          $scope.HDWallet.dPath = $scope.HDWallet.hwXeroPath;
           break;
         default:
           $scope.HDWallet.dPath = $scope.HDWallet.trezorPath;
@@ -275,6 +282,9 @@ var decryptWalletCtrl = function($scope, $sce, walletService) {
           break;
         case nodes.nodeTypes.THUNDERCORE:
           $scope.HDWallet.dPath = $scope.HDWallet.thundercorePath;
+          break;
+        case nodes.nodeTypes.XERO:
+          $scope.HDWallet.dPath = $scope.HDWallet.hwXeroPath;
           break;
         default:
           $scope.HDWallet.dPath = $scope.HDWallet.defaultDPath;
@@ -481,9 +491,9 @@ var decryptWalletCtrl = function($scope, $sce, walletService) {
         walletService.password = $scope.privPassword;
       } else if ($scope.showPDecrypt && !$scope.requirePPass) {
         let privKey =
-          $scope.manualprivkey.indexOf('0x') === 0
-            ? $scope.manualprivkey
-            : '0x' + $scope.manualprivkey;
+          $scope.manualprivkey.indexOf('0x') === 0 ?
+          $scope.manualprivkey :
+          '0x' + $scope.manualprivkey;
 
         if (!$scope.Validator.isValidHex($scope.manualprivkey)) {
           $scope.notifier.danger(globalFuncs.errorMsgs[37]);
@@ -619,7 +629,9 @@ var decryptWalletCtrl = function($scope, $sce, walletService) {
     // trezor is using the path without change level id
     var path = $scope.getTrezorPath();
 
-    TrezorConnect.getPublicKey({path})
+    TrezorConnect.getPublicKey({
+        path
+      })
       .then(
         ({
           payload: {

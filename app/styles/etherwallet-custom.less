@@ -6,7 +6,6 @@ img {
 textarea {
   resize: vertical;
 }
-
 // announcement bars
 .announcement {
   padding: 3px 10px;
@@ -15,18 +14,21 @@ textarea {
   color: white;
   display: block;
   background-color: @brand-primary;
+
   a {
     text-decoration: underline;
     color: white;
     transition: 250ms all ease;
   }
-  &:hover,
-  &:focus {
+
+  &:focus,
+  &:hover {
     transition: 250ms all ease;
     color: darken(white, 5%);
     text-decoration: none;
     background-color: darken(@brand-primary, 5%);
   }
+
   strong {
     font-weight: 400;
   }
@@ -34,9 +36,11 @@ textarea {
 
 .announcement-mew {
   background-color: rgba(5, 192, 165, 1);
-  &:hover,
-  &:focus {
+
+  &:focus,
+  &:hover {
     background-color: rgba(5, 192, 165, 0.8);
+
     a,
     a:hover {
       text-decoration: none;
@@ -46,9 +50,11 @@ textarea {
 
 .annoucement-warning {
   background-color: @brand-orangered;
-  &:hover,
-  &:focus {
+
+  &:focus,
+  &:hover {
     background-color: darken(@brand-orangered, 5%);
+
     a,
     a:hover {
       text-decoration: none;
@@ -58,19 +64,21 @@ textarea {
 
 .annoucement-danger {
   background-color: @brand-danger;
+
   &:hover {
     background-color: darken(@brand-orangered, 5%);
   }
-  a:hover,
-  a:focus {
+
+  a:focus,
+  a:hover {
     color: darken(white, 5%);
+
     a,
     a:hover {
       text-decoration: none;
     }
   }
 }
-
 // address icenticons
 .address-identicon-container {
   padding: 0;
@@ -82,6 +90,7 @@ textarea {
 
 .address-identicon-container-right {
   text-align: right;
+
   .addressIdenticon {
     float: right;
   }
@@ -99,8 +108,7 @@ textarea {
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 50%;
-  box-shadow: inset rgba(255, 255, 255, 0.5) 0 2px 2px,
-    inset rgba(0, 0, 0, 0.6) 0 -1px 8px;
+  box-shadow: inset rgba(255, 255, 255, 0.5) 0 2px 2px, inset rgba(0, 0, 0, 0.6) 0 -1px 8px;
 }
 
 .addressIdenticon.med {
@@ -108,6 +116,7 @@ textarea {
   height: 3rem;
   padding: 0;
 }
+
 .addressIdenticon.small {
   width: 2rem;
   height: 2rem;
@@ -129,6 +138,7 @@ textarea {
       td:nth-child(1) {
         width: 30%;
       }
+
       td:nth-child(2) {
         width: 70%;
       }
@@ -147,7 +157,6 @@ textarea {
     }
   }
 }
-
 // helpers
 .wrap {
   word-wrap: break-word;
@@ -159,7 +168,6 @@ textarea {
     height: 100px;
   }
 }
-
 // help page
 #paneHelp {
   h3 {
@@ -175,15 +183,18 @@ textarea {
   img {
     display: inline-block;
   }
+
   img:hover + .account-help-text {
     display: block;
     opacity: 1;
     z-index: 999;
   }
+
   img {
     margin-left: -30px;
     margin-right: 3px;
   }
+
   &:hover {
     opacity: 1;
   }
@@ -202,39 +213,38 @@ textarea {
   width: 18rem;
   z-index: 999;
   color: @text-color;
-  ul& {
+
+  ul & {
     padding-left: 1.6rem;
   }
+
   li {
     font-size: @font-size-xs;
     font-weight: 400;
   }
 }
-
 @media screen and (max-width: 767px) {
-  .account-help-icon li,
   .account-help-icon img,
+  .account-help-icon li,
   .account-help-icon p {
     display: none;
   }
 }
-
 // monospace things
-.mono,
-.form-control,
 #accountAddress,
+#accountAddressMainTbl-1,
 #accountBalance,
-#accountBalanceUsd,
-#accountBalanceEur,
 #accountBalanceBtc,
+#accountBalanceEur,
 #accountBalancePopMB-0,
 #accountBalancePopMB-2,
-#accountAddressMainTbl-1 {
+#accountBalanceUsd,
+.form-control,
+.mono {
   font-family: @font-family-monospace;
   font-weight: normal;
   letter-spacing: 0.02em;
 }
-
 // QR Code on Offline Transactions Page
 .offline-qrcode {
   margin-top: -150px;
@@ -251,6 +261,7 @@ textarea {
   .clearfix;
   padding-left: 1em;
   margin: 0;
+
   li {
     margin-bottom: 0;
     list-style-type: none;
@@ -263,25 +274,31 @@ table.account-info {
   border-bottom: 0;
   min-width: 200px;
   width: 100%;
+
   tbody {
     display: flex;
     flex-direction: column;
   }
+
   td {
     padding: 0.3rem;
     line-height: 1;
   }
+
   td:first-child {
     word-wrap: break-word;
     padding-left: 1em;
   }
+
   tr {
     border-bottom: 1px solid #f3f3f3;
   }
-  tr:nth-last-child(2),
-  tr:last-child {
-    border-bottom: 0px solid #f3f3f3;
+
+  tr:last-child,
+  tr:nth-last-child(2) {
+    border-bottom: 0 solid #f3f3f3;
   }
+
   tr.custom-token {
     order: -1;
   }
@@ -289,6 +306,7 @@ table.account-info {
 
 input[type="text"] + .eye {
   cursor: pointer;
+
   &:before {
     content: "";
     width: 20px;
@@ -303,6 +321,7 @@ input[type="text"] + .eye {
 
 input[type="password"] + .eye {
   cursor: pointer;
+
   &:before {
     content: "";
     width: 20px;
@@ -314,12 +333,12 @@ input[type="password"] + .eye {
     background: url("../images/icon-eye-closed.svg");
   }
 }
-
 // collapsable containers
 .collapse-container {
   h1 {
     margin: 0.25rem 0;
   }
+
   .collapse-button {
     float: left;
     font-weight: 500;
@@ -337,17 +356,16 @@ input[type="password"] + .eye {
     border-radius: 5px;
   }
 }
-
 // help collapsable containers
 .help .collapse-container {
   margin: 40px 0;
+
   .collapse-button {
     margin: -10px -30px;
     font-size: 20px;
     line-height: 1;
   }
 }
-
 // little x image next to custom tokens
 .token-remove {
   width: @font-size-small;
@@ -384,8 +402,9 @@ input[type="password"] + .eye {
 h2 a.isActive {
   color: #333;
   cursor: default;
-  &:hover,
-  &:active {
+
+  &:active,
+  &:hover {
     color: #333;
     cursor: default;
   }
@@ -398,6 +417,7 @@ h2 a.isActive {
 .output {
   padding: @space-sm @space;
   margin-top: -@space / 2;
+
   p {
     margin: @space-md 0 0;
   }
@@ -415,6 +435,7 @@ label small {
   .col-xs-1 {
     padding: 0;
   }
+
   .col-xs-11 {
     padding-right: 10px;
   }
@@ -426,10 +447,12 @@ label small {
 
 .decrypt-drtv {
   padding: @space 0;
+
   label.radio {
     padding: 0 @space-lg;
     margin: 0.5rem 0;
   }
+
   h4 {
     margin-top: 0;
   }
@@ -458,21 +481,25 @@ label small {
     color: @text-color;
     font-weight: 400;
   }
+
   .dropdown-toggle {
     display: block;
     text-align: left;
     white-space: normal;
+
     .caret {
       position: absolute;
       right: @space;
       top: 1.25rem;
     }
   }
+
   .dropdown-menu-left {
     font-size: @font-size-small;
     left: auto;
     right: 0;
     min-width: 37rem;
+
     small {
       float: right;
     }
@@ -494,10 +521,10 @@ label small {
     border-color: #84023d;
     position: relative;
     width: 200px;
+
     .na {
       background-color: red;
       border-radius: 300px;
-
       padding: 5px 8px;
       font-weight: 900;
     }
@@ -524,7 +551,7 @@ label small {
 .dropdown-gas__msg {
   font-size: 12px;
   font-weight: 300;
-  margin: -10px auto 3px auto;
+  margin: -10px auto 3px;
   max-width: 113rem;
   padding: 0 5rem;
   text-align: right;
@@ -542,10 +569,12 @@ label small {
   h5 {
     margin-bottom: @space-xs;
   }
+
   a.isActive {
     color: @text-color;
   }
 }
+
 #selectedTypeLedger ol {
   padding-left: 1rem;
 }
@@ -567,19 +596,21 @@ label small {
     left: 50%;
     transform: translate(-50%, -60%);
   }
+
   img {
     border-radius: 50%;
   }
+
   h1 {
     animation: opacity 2000ms infinite ease-in-out;
     color: white;
   }
-
   @keyframes opacity {
     from,
     to {
       opacity: 0;
     }
+
     50% {
       opacity: 1;
     }
@@ -596,7 +627,6 @@ label small {
 .ens-response {
   color: @gray;
 }
-
 // color code the nodes
 @brand-eth: @brand-primary;
 @brand-etc: #009241;
@@ -622,22 +652,26 @@ label small {
 @brand-reosc: #1500db;
 @brand-cust: #b50085;
 @brand-thundercore: #ffc000;
+@brand-xero: #1500db;
 
 .dropdown-node .dropdown-menu {
   li {
     border-left: 2px solid @brand-cust;
     position: relative;
   }
+
   li:last-child {
     border-top: 1px solid @gray-lighter;
     padding-top: 5px;
   }
+
   li:nth-child(1),
   li:nth-child(2),
   li:nth-child(3),
   li:nth-child(4) {
     border-left: 2px solid @brand-eth;
   }
+
   li:nth-child(5),
   li:nth-child(6),
   li:nth-child(7),
@@ -645,6 +679,7 @@ label small {
   li:nth-child(9) {
     border-left: 2px solid @brand-etc;
   }
+
   li:nth-child(10),
   li:nth-child(11),
   li:nth-child(12),
@@ -653,73 +688,98 @@ label small {
   li:nth-child(15) {
     border-left: 2px solid @brand-test;
   }
+
   li:nth-child(16) {
     border-left: 2px solid @brand-exp;
   }
+
   li:nth-child(17) {
     border-left: 2px solid @brand-ubq;
   }
+
   li:nth-child(18) {
     border-left: 2px solid @brand-poa;
   }
+
   li:nth-child(19) {
     border-left: 2px solid @brand-tomo;
   }
+
   li:nth-child(20) {
     border-left: 2px solid @brand-ella;
   }
+
   li:nth-child(21) {
     border-left: 2px solid @brand-etsc;
   }
+
   li:nth-child(22) {
     border-left: 2px solid @brand-egem;
   }
+
   li:nth-child(23) {
     border-left: 2px solid @brand-clo;
   }
+
   li:nth-child(24) {
     border-left: 2px solid @brand-music;
   }
+
   li:nth-child(25) {
     border-left: 2px solid @brand-go;
   }
+
   li:nth-child(26) {
     border-left: 2px solid @brand-eosc;
   }
+
   li:nth-child(27),
   li:nth-child(28) {
     border-left: 2px solid @brand-akroma;
   }
+
   li:nth-child(29) {
     border-left: 2px solid @brand-esn;
   }
+
   li:nth-child(30) {
     border-left: 2px solid @brand-pirl;
   }
+
   li:nth-child(31) {
     border-left: 2px solid @brand-etho;
   }
+
   li:nth-child(32) {
     border-left: 2px solid @brand-ath;
   }
+
   li:nth-child(33) {
     border-left: 2px solid @brand-ilt;
   }
+
   li:nth-child(34) {
     border-left: 2px solid @brand-web;
   }
+
   li:nth-child(35),
   li:nth-child(36) {
     border-left: 2px solid @brand-reosc;
   }
+
   li:nth-child(37) {
-      border-left: 2px solid @brand-thundercore;
+    border-left: 2px solid @brand-thundercore;
   }
+
+  li:nth-child(38),
+  li:nth-child(39) {
+    border-left: 2px solid @brand-xero;
+  }
+
   li:last-child {
     border-left: 2px solid @gray-light;
   }
-  li:nth-child(4),
-  li:nth-child(9),
+
   li:nth-child(15),
   li:nth-child(16),
   li:nth-child(17),
@@ -737,7 +797,9 @@ label small {
   li:nth-child(30),
   li:nth-child(31),
   li:nth-child(32),
-  li:nth-child(33) {
+  li:nth-child(33),
+  li:nth-child(4),
+  li:nth-child(9) {
     border-bottom: 1px solid @gray-lighter;
   }
 }
@@ -745,19 +807,24 @@ label small {
 header {
   margin-bottom: 1em;
 }
+
 header.ETH {
   .header-branding {
     border-bottom: 0.25rem solid @brand-eth;
   }
+
   & + .container + .pre-footer + .footer {
     border-top: 0.25rem solid @brand-eth;
   }
+
   & + .container .modal-content {
     border: 0.25rem solid @brand-eth;
   }
+
   & + .container .alert-info {
     background-color: @brand-eth;
   }
+
   .dropdown-gas:before {
     width: 24px;
     background-image: url("../images/coins/ethereum.svg");
@@ -768,15 +835,19 @@ header.ETC {
   .header-branding {
     border-bottom: 0.25rem solid @brand-etc;
   }
+
   & + .container + .pre-footer + .footer {
     border-top: 0.25rem solid @brand-etc;
   }
+
   & + .container .modal-content {
     border: 0.25rem solid @brand-etc;
   }
+
   & + .container .alert-info {
     background-color: @brand-etc;
   }
+
   .dropdown-gas:before {
     width: 24px;
     background-image: url("../images/coins/ethereum-classic.svg");
@@ -787,12 +858,15 @@ header.Ropsten {
   .header-branding {
     border-bottom: 0.25rem solid @brand-test;
   }
+
   & + .container + .pre-footer + .footer {
     border-top: 0.25rem solid @brand-test;
   }
+
   & + .container .modal-content {
     border: 0.25rem solid @brand-test;
   }
+
   & + .container .alert-info {
     background-color: @brand-test;
   }
@@ -802,12 +876,15 @@ header.Kovan {
   .header-branding {
     border-bottom: 0.25rem solid @brand-test;
   }
+
   & + .container + .pre-footer + .footer {
     border-top: 0.25rem solid @brand-test;
   }
+
   & + .container .modal-content {
     border: 0.25rem solid @brand-test;
   }
+
   & + .container .alert-info {
     background-color: @brand-test;
   }
@@ -817,12 +894,15 @@ header.Rinkeby {
   .header-branding {
     border-bottom: 0.25rem solid @brand-test;
   }
+
   & + .container + .pre-footer + .footer {
     border-top: 0.25rem solid @brand-test;
   }
+
   & + .container .modal-content {
     border: 0.25rem solid @brand-test;
   }
+
   & + .container .alert-info {
     background-color: @brand-test;
   }
@@ -832,12 +912,15 @@ header.Custom {
   .header-branding {
     border-bottom: 0.25rem solid @brand-cust;
   }
+
   & + .container + .pre-footer + .footer {
     border-top: 0.25rem solid @brand-cust;
   }
+
   & + .container .modal-content {
     border: 0.25rem solid @brand-cust;
-  } 
+  }
+
   & + .container .alert-info {
     background-color: @brand-cust;
   }
@@ -847,15 +930,19 @@ header.EXP {
   .header-branding {
     border-bottom: 0.25rem solid @brand-exp;
   }
+
   & + .container + .pre-footer + .footer {
     border-top: 0.25rem solid @brand-exp;
   }
+
   & + .container .modal-content {
     border: 0.25rem solid @brand-exp;
   }
+
   & + .container .alert-info {
     background-color: @brand-exp;
   }
+
   .dropdown-gas:before {
     width: 32px;
     background-image: url("../images/coins/exp.svg");
@@ -866,15 +953,19 @@ header.UBQ {
   .header-branding {
     border-bottom: 0.25rem solid @brand-ubq;
   }
+
   & + .container + .pre-footer + .footer {
     border-top: 0.25rem solid @brand-ubq;
   }
+
   & + .container .modal-content {
     border: 0.25rem solid @brand-ubq;
   }
+
   & + .container .alert-info {
     background-color: @brand-ubq;
   }
+
   .dropdown-gas:before {
     width: 32px;
     background-image: url("../images/coins/ubiq.svg");
@@ -885,15 +976,19 @@ header.POA {
   .header-branding {
     border-bottom: 0.25rem solid @brand-poa;
   }
+
   & + .container + .pre-footer + .footer {
     border-top: 0.25rem solid @brand-poa;
   }
+
   & + .container .modal-content {
     border: 0.25rem solid @brand-poa;
   }
+
   & + .container .alert-info {
     background-color: @brand-poa;
   }
+
   .dropdown-gas:before {
     width: 32px;
     background-image: url("../images/coins/poa.svg");
@@ -904,15 +999,19 @@ header.TOMO {
   .header-branding {
     border-bottom: 0.25rem solid @brand-tomo;
   }
+
   & + .container + .pre-footer + .footer {
     border-top: 0.25rem solid @brand-tomo;
   }
+
   & + .container .modal-content {
     border: 0.25rem solid @brand-tomo;
   }
+
   & + .container .alert-info {
     background-color: @brand-tomo;
   }
+
   .dropdown-gas:before {
     width: 34px;
     background-image: url("../images/coins/tomo.svg");
@@ -923,15 +1022,19 @@ header.ELLA {
   .header-branding {
     border-bottom: 0.25rem solid @brand-ella;
   }
+
   & + .container + .pre-footer + .footer {
     border-top: 0.25rem solid @brand-ella;
   }
+
   & + .container .modal-content {
     border: 0.25rem solid @brand-ella;
   }
+
   & + .container .alert-info {
     background-color: @brand-ella;
   }
+
   .dropdown-gas:before {
     width: 32px;
     background-image: url("../images/coins/ella.svg");
@@ -942,15 +1045,19 @@ header.ETSC {
   .header-branding {
     border-bottom: 0.25rem solid @brand-etsc;
   }
+
   & + .container + .pre-footer + .footer {
     border-top: 0.25rem solid @brand-etsc;
   }
+
   & + .container .modal-content {
     border: 0.25rem solid @brand-etsc;
   }
+
   & + .container .alert-info {
     background-color: @brand-etsc;
   }
+
   .dropdown-gas:before {
     width: 32px;
     background-image: url("../images/coins/etsc.svg");
@@ -961,15 +1068,19 @@ header.EGEM {
   .header-branding {
     border-bottom: 0.25rem solid @brand-egem;
   }
+
   & + .container + .pre-footer + .footer {
     border-top: 0.25rem solid @brand-egem;
   }
+
   & + .container .modal-content {
     border: 0.25rem solid @brand-egem;
   }
+
   & + .container .alert-info {
     background-color: @brand-egem;
   }
+
   .dropdown-gas:before {
     width: 36px;
     background-image: url("../images/coins/egem.svg");
@@ -980,15 +1091,19 @@ header.CLO {
   .header-branding {
     border-bottom: 0.25rem solid @brand-clo;
   }
+
   & + .container + .pre-footer + .footer {
     border-top: 0.25rem solid @brand-clo;
   }
+
   & + .container .modal-content {
     border: 0.25rem solid @brand-clo;
   }
+
   & + .container .alert-info {
     background-color: @brand-clo;
   }
+
   .dropdown-gas:before {
     width: 36px;
     background-image: url("../images/coins/callisto.svg");
@@ -999,15 +1114,19 @@ header.MUSIC {
   .header-branding {
     border-bottom: 0.25rem solid @brand-music;
   }
+
   & + .container + .pre-footer + .footer {
     border-top: 0.25rem solid @brand-music;
   }
+
   & + .container .modal-content {
     border: 0.25rem solid @brand-music;
   }
+
   & + .container .alert-info {
     background-color: @brand-music;
   }
+
   .dropdown-gas:before {
     width: 34px;
     background-image: url("../images/coins/music.svg");
@@ -1018,15 +1137,19 @@ header.GO {
   .header-branding {
     border-bottom: 0.25rem solid @brand-go;
   }
+
   & + .container + .pre-footer + .footer {
     border-top: 0.25rem solid @brand-go;
   }
+
   & + .container .modal-content {
     border: 0.25rem solid @brand-go;
   }
+
   & + .container .alert-info {
     background-color: @brand-go;
   }
+
   .dropdown-gas:before {
     width: 38px;
     background-image: url("../images/coins/gochain.svg");
@@ -1037,15 +1160,19 @@ header.EOSC {
   .header-branding {
     border-bottom: 0.25rem solid @brand-eosc;
   }
+
   & + .container + .pre-footer + .footer {
     border-top: 0.25rem solid @brand-eosc;
   }
+
   & + .container .modal-content {
     border: 0.25rem solid @brand-eosc;
   }
+
   & + .container .alert-info {
     background-color: @brand-eosc;
   }
+
   .dropdown-gas:before {
     width: 26px;
     background-image: url("../images/coins/eosc.svg");
@@ -1056,15 +1183,19 @@ header.AKA {
   .header-branding {
     border-bottom: 0.25rem solid @brand-akroma;
   }
+
   & + .container + .pre-footer + .footer {
     border-top: 0.25rem solid @brand-akroma;
   }
+
   & + .container .modal-content {
     border: 0.25rem solid @brand-akroma;
   }
+
   & + .container .alert-info {
     background-color: @brand-akroma;
   }
+
   .dropdown-gas:before {
     width: 34px;
     background-image: url("../images/coins/akroma.svg");
@@ -1075,15 +1206,19 @@ header.ESN {
   .header-branding {
     border-bottom: 0.25rem solid @brand-esn;
   }
+
   & + .container + .pre-footer + .footer {
     border-top: 0.25rem solid @brand-esn;
   }
+
   & + .container .modal-content {
     border: 0.25rem solid @brand-esn;
   }
+
   & + .container .alert-info {
     background-color: @brand-esn;
   }
+
   .dropdown-gas:before {
     width: 32px;
     background-image: url("../images/coins/ethersocial.svg");
@@ -1094,15 +1229,19 @@ header.PIRL {
   .header-branding {
     border-bottom: 0.25rem solid @brand-pirl;
   }
+
   & + .container + .pre-footer + .footer {
     border-top: 0.25rem solid @brand-pirl;
   }
+
   & + .container .modal-content {
     border: 0.25rem solid @brand-pirl;
   }
+
   & + .container .alert-info {
     background-color: @brand-pirl;
   }
+
   .dropdown-gas:before {
     width: 32px;
     background-image: url("../images/coins/pirl.svg");
@@ -1113,15 +1252,19 @@ header.ETHO {
   .header-branding {
     border-bottom: 0.25rem solid @brand-etho;
   }
+
   & + .container + .pre-footer + .footer {
     border-top: 0.25rem solid @brand-etho;
   }
+
   & + .container .modal-content {
     border: 0.25rem solid @brand-etho;
   }
+
   & + .container .alert-info {
     background-color: @brand-etho;
   }
+
   .dropdown-gas:before {
     width: 24px;
     background-image: url("../images/coins/etho.svg");
@@ -1132,15 +1275,19 @@ header.ATH {
   .header-branding {
     border-bottom: 0.25rem solid @brand-ath;
   }
+
   & + .container + .pre-footer + .footer {
     border-top: 0.25rem solid @brand-ath;
   }
+
   & + .container .modal-content {
     border: 0.25rem solid @brand-ath;
   }
+
   & + .container .alert-info {
     background-color: @brand-ath;
   }
+
   .dropdown-gas:before {
     width: 36px;
     background-image: url("../images/coins/atheios.svg");
@@ -1151,15 +1298,19 @@ header.ILT {
   .header-branding {
     border-bottom: 0.25rem solid @brand-ilt;
   }
+
   & + .container + .pre-footer + .footer {
     border-top: 0.25rem solid @brand-ilt;
   }
+
   & + .container .modal-content {
     border: 0.25rem solid @brand-ilt;
   }
+
   & + .container .alert-info {
     background-color: @brand-ilt;
   }
+
   .dropdown-gas:before {
     width: 35px;
     background-image: url("../images/coins/ilt.svg");
@@ -1170,15 +1321,19 @@ header.WEB {
   .header-branding {
     border-bottom: 0.25rem solid @brand-web;
   }
+
   & + .container + .pre-footer + .footer {
     border-top: 0.25rem solid @brand-web;
   }
+
   & + .container .modal-content {
     border: 0.25rem solid @brand-web;
   }
+
   & + .container .alert-info {
     background-color: @brand-web;
   }
+
   .dropdown-gas:before {
     width: 36px;
     background-image: url("../images/coins/webchain.svg");
@@ -1189,15 +1344,19 @@ header.REOSC {
   .header-branding {
     border-bottom: 0.25rem solid @brand-reosc;
   }
+
   & + .container + .pre-footer + .footer {
     border-top: 0.25rem solid @brand-reosc;
   }
+
   & + .container .modal-content {
     border: 0.25rem solid @brand-reosc;
   }
+
   & + .container .alert-info {
     background-color: @brand-reosc;
   }
+
   .dropdown-gas:before {
     width: 32px;
     background-image: url("../images/coins/reosc.svg");
@@ -1208,18 +1367,45 @@ header.THUNDERCORE {
   .header-branding {
     border-bottom: 0.25rem solid @brand-thundercore;
   }
+
   & + .container + .pre-footer + .footer {
     border-top: 0.25rem solid @brand-thundercore;
   }
+
   & + .container .modal-content {
     border: 0.25rem solid @brand-thundercore;
   }
+
   & + .container .alert-info {
     background-color: @brand-thundercore;
   }
+
   .dropdown-gas:before {
     width: 34px;
     background-image: url("../images/coins/thundercore.svg");
+  }
+}
+
+header.XERO {
+  .header-branding {
+    border-bottom: 0.25rem solid @brand-xero;
+  }
+
+  & + .container + .pre-footer + .footer {
+    border-top: 0.25rem solid @brand-xero;
+  }
+
+  & + .container .modal-content {
+    border: 0.25rem solid @brand-xero;
+  }
+
+  & + .container .alert-info {
+    background-color: @brand-xero;
+  }
+
+  .dropdown-gas:before {
+    width: 32px;
+    background-image: url("../images/coins/reosc.svg");
   }
 }
 
@@ -1230,6 +1416,7 @@ header.THUNDERCORE {
   justify-content: center;
   padding: 0 !important;
   text-align: center;
+
   ol {
     padding: 0 10em;
     text-align: left !important;
@@ -1239,7 +1426,6 @@ header.THUNDERCORE {
     }
   }
 }
-
 @media screen and (max-width: 960px) {
   .contest-container {
     ol {
@@ -1253,7 +1439,6 @@ header.THUNDERCORE {
     }
   }
 }
-
 @media screen and (max-width: 650px) {
   .contest-container {
     ol {
@@ -1270,7 +1455,6 @@ header.THUNDERCORE {
     cursor: pointer;
   }
 }
-
 @media screen and (max-width: 600px) {
   .footer__pill-custom-wrap {
     display: flex;

@@ -30,6 +30,7 @@ nodes.nodeTypes = {
 	MIX: "MIX",
 	REOSC: "REOSC",
 	THUNDERCORE: "TT",
+	XERO:"XERO",
 	Custom: "CUSTOM ETH"
 };
 nodes.ensNodeTypes = [nodes.nodeTypes.ETH, nodes.nodeTypes.Ropsten];
@@ -476,6 +477,19 @@ nodes.nodeList = {
 		estimateGas: true,
 		service: "thundercore.com",
 		lib: new nodes.customNode("https://mainnet-rpc.thundercore.com", "443")
+	},
+	reosc: {
+		name: "XERO",
+		blockExplorerTX: "https://explorer.xerom.org/tx/[[txHash]]",
+		blockExplorerAddr: "https://explorer.xerom.org/addr/[[address]]",
+		type: nodes.nodeTypes.XERO,
+		eip155: true,
+		chainId: 1313500,
+		tokenList: require("./tokens/xeroTokens.json"),
+		abiList: require("./abiDefinitions/xeroAbi.json"),
+		estimateGas: true,
+		service: "Xerom.org",
+		lib: new nodes.customNode("https://rpc.xerom.org", "")
 	}
 };
 
