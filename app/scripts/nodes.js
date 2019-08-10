@@ -484,7 +484,7 @@ nodes.nodeList = {
 		blockExplorerAddr: "https://explorer.xerom.org/addr/[[address]]",
 		type: nodes.nodeTypes.XERO,
 		eip155: true,
-		chainId: 1313114,
+		chainId: 1313500,
 		tokenList: require("./tokens/xeroTokens.json"),
 		abiList: require("./abiDefinitions/xeroAbi.json"),
 		estimateGas: true,
