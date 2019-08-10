@@ -3,6 +3,8 @@
 
 rm -r dist
 
+rm -r chrome-extension
+
 git pull
 
 npm run build
