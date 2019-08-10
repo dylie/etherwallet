@@ -3,20 +3,20 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>MyEtherWallet.com</title>
-<meta property="og:title" content="MyEtherWallet.com: Your Key to Ethereum">
-<meta property="og:site_name" content="MyEtherWallet.com: Your Key to Ethereum">
-<meta name="twitter:title" content="MyEtherWallet.com: Your Key to Ethereum">
-<meta name="apple-mobile-web-app-title" content="MyEtherWallet.com: Your Key to Ethereum">
+<title>XERO Web Wallet</title>
+<meta property="og:title" content="wallet.xerom.org: Your Key to Xerom">
+<meta property="og:site_name" content="wallet.xerom.org: Your Key to Xerom">
+<meta name="twitter:title" content="wallet.xerom.org: Your Key to Xerom">
+<meta name="apple-mobile-web-app-title" content="wallet.xerom.org: Your Key to Xerom">
 <link href="https://vintage.myetherwallet.com" rel="canonical">
 <meta content="https://vintage.myetherwallet.com" property="og:url">
 <meta content="https://vintage.myetherwallet.com" name="twitter:url">
 <link rel="stylesheet" href="css/etherwallet-master.min.css">
 <script type="text/javascript" src="js/etherwallet-static.min.js"></script>
 <script type="text/javascript" src="js/etherwallet-master.js"></script>
-<meta name="description" content="MyEtherWallet (MEW) is a free, open-source, client-side interface for generating Ethereum wallets & more. Interact with the Ethereum blockchain easily & securely.">
-<meta property="og:description"  content="Free, open-source, client-side Ethereum wallet. Enabling you to interact with the blockchain easily & securely.">
-<meta name="twitter:description" content="Free, open-source, client-side Ethereum wallet. Enabling you to interact with the blockchain easily & securely.">
+<meta name="description" content="wallet.xerom.org is a free, open-source, client-side interface for generating Xerom wallets & more. Interact with the Xerom blockchain easily & securely.">
+<meta property="og:description"  content="Free, open-source, client-side Xerom wallet. Enabling you to interact with the blockchain easily & securely.">
+<meta name="twitter:description" content="Free, open-source, client-side Xerom wallet. Enabling you to interact with the blockchain easily & securely.">
 <meta name="robots" content="index,follow">
 <meta name="googlebot" content="index,follow">
 <meta name="google-site-verification" content="IpChQ00NYUQuNs_7Xs6xlnSdzalOlTUYbBsr8f7OpvM" />
@@ -26,13 +26,13 @@
 <link href="images/fav/manifest.json" rel="manifest">
 <link href="images/fav/safari-pinned-tab.svg" rel="mask-icon" color="#2f99b0">
 <link href="images/fav/favicon.ico" rel="shortcut icon">
-<meta name="apple-mobile-web-app-title" content="MyEtherWallet &middot; Your Key to Ethereum">
+<meta name="apple-mobile-web-app-title" content="MyEtherWallet &middot; Your Key to Xerom">
 <meta name="application-name" content="MyEtherWallet">
 <meta name="msapplication-config" content="images/fav/browserconfig.xml">
 <meta name="theme-color" content="#1d6986">
 <meta name="apple-mobile-web-app-status-bar-style" content="#1d6986">
 <meta property="og:url" content="https://vintage.myetherwallet.com" />
-<meta property="og:title" content="MyEtherWallet.com  &middot; Your Key to Ethereum" />
+<meta property="og:title" content="MyEtherWallet.com  &middot; Your Key to Xerom" />
 <meta property="og:type" content="website">
 <meta property="og:image" content="/images/myetherwallet-logo-banner.png" />
 <meta property="og:image" content="/images/myetherwallet-logo.png" />
@@ -46,27 +46,19 @@
 {
 "@context": "http://schema.org",
 "@type" : "Organization",
-"name" : "MyEtherWallet",
-"legalName" : "MyEtherWallet Inc",
-"url" : "https://vintage.myetherwallet.com/",
+"name" : "Wallet.xerom.org",
+"legalName" : "Xerom",
+"url" : "https://wallet.xerom.org/",
 "contactPoint" : [{
   "@type" : "ContactPoint",
-  "email" : "support@myetherwallet.com",
-  "url"   : "https://myetherwallet.com",
+  "email" : "admin@xerom.org",
+  "url"   : "https://xerom.org",
   "contactType" : "customer service"
 }],
 "logo" : "https://vintage.myetherwallet.com/images/myetherwallet-logo.png",
-"description": "MyEtherWallet.com is a free, open-source, client-side interface for generating Ethereum wallets &amp; more. Interact with the Ethereum blockchain easily &amp; securely.",
+"description": "wallet.xerom.org is a free, open-source, client-side interface for generating Xerom wallets &amp; more. Interact with the Xerom blockchain easily &amp; securely.",
 "sameAs" : [
-  "https://vintage.myetherwallet.com/",
-  "https://chrome.google.com/webstore/detail/myetherwallet-cx/nlbmnnijcnlegkjjpcfjclmcfggfefdm",
-  "https://www.facebook.com/MyEtherWallet/",
-  "https://twitter.com/myetherwallet",
-  "https://medium.com/@myetherwallet",
-  "https://kb.myetherwallet.com/",
-  "https://github.com/kvhnuke/etherwallet",
-  "https://github.com/MyEtherWallet",
-  "https://kvhnuke.github.io/etherwallet/","https://myetherwallet.slack.com/"
+  "https://wallet.xerom.org/",
 ]
 }
 </script>
@@ -78,9 +70,7 @@
 @@if (site === 'mew' ) {
   <div class="small announcement announcement-mew">
     <div clas="container">
-      Try our new version here: <a href="https://www.myetherwallet.com/">https://www.myetherwallet.com/</a>
-      <br />
-      Read more about it in our <a href="https://medium.com/@myetherwallet/v5-beta-a-user-friendly-mew-631378a6c8ff" target="_blank">Medium post</a>
+      DON'T GET PHISHED, please! 🎣 Thank you! 🤗  Make sure you're on https://wallet.xerom.org
     </div>
   </div>
 }
@@ -89,7 +79,7 @@
   <section class="container">
     @@if (site === 'mew' ) {
       <a class="brand" href="/" aria-label="Go to homepage">
-        <img src="images/logo-myetherwallet.svg"   height="64px" width="245px" alt="MyEtherWallet" />
+        <img src="images/myetherwallet-logo.png"   height="64px" width="245px" alt="MyEtherWallet" />
         <p class="small visible-xs">3.38.0</p>
       </a>
     }

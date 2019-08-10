@@ -114,5 +114,3 @@ var globalService = function($http, $httpParamSerializerJQLike) {
 }
 
 module.exports = globalService
-
-

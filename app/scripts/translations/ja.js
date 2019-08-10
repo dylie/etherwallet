@@ -104,7 +104,7 @@ EOS_02                          :  '**EOSの鍵を登録／転写する**', /* *
 EOS_03                          :  '`register`を選択する', /*Select `register`*/
 EOS_04                          :  '**EOSの公開鍵**を入力する　<---　注意！ 「EOSの公開鍵」です！', /*Enter your **EOS Public Key** <--- CAREFUL! EOS PUBLIC KEY!*/
 EOS_05                          :  '送出ページでEOSの契約に入金する', /*Fund EOS Contract on Send Page*/
-EOS_06                          :  'Ether/トークンの送出ページに移動する', /*Go to Send Ether & Tokens Page*/
+EOS_06                          :  'Ether/トークンの送出ページに移動する', /*Go to Send XERO & Tokens Page*/
 EOS_07                          :  '現在解錠中のお財布と同じものをここで解錠する', /*Unlock same wallet you are unlocking here.*/
 EOS_08                          :  '支援したい量を`0xd0a6E6C54DbC68Db5db3A091B171A77407Ff7ccf`に送出する', /*Send Amount you want to Contribute to `0xd0a6E6C54DbC68Db5db3A091B171A77407Ff7ccf`*/
 EOS_09                          :  'EOSトークンを請求する', /*Claim EOS Tokens*/
