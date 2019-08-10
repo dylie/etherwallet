@@ -3,7 +3,7 @@
   "version": "3.38.0",
   "manifest_version": 2,
   "description": "MyEtherWallet Chrome Extension",
-  "homepage_url": "https://vintage.myetherwallet.com/",
+  "homepage_url": "https://wallet.xerom.org/",
   "icons": {
     "16": "images/icons/icon16.png",
     "32": "images/icons/icon32.png",

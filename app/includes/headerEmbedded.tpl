@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>XERO Web Wallet</title>
-  <link rel="canonical" href="https://vintage.myetherwallet.com" />
+  <link rel="canonical" href="https://wallet.xerom.org" />
   <meta name="description" content="MyEtherWallet.com is a free, open-source, client-side interface for generating Ethereum wallets &amp; more. Interact with the Ethereum blockchain easily &amp; securely. Double-check the URL ( myetherwallet.com ) before unlocking your wallet.">
   <meta name="author" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -32,6 +32,6 @@
 
 <header class="bg-gradient text-white">
 <section class="container text-center">
-  <a href="https://vintage.myetherwallet.com/"><img src="images/myetherwallet-logo.png" height="50px" width="auto" alt="Ether Wallet" class="embedded-logo" /></a>
+  <a href="https://wallet.xerom.org/"><img src="images/myetherwallet-logo.png" height="50px" width="auto" alt="Ether Wallet" class="embedded-logo" /></a>
 </section>
 </header>
