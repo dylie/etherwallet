@@ -20,7 +20,7 @@ CONTRACT_Warning_1              :  '**契約を展開**しようとしていま�
 CONTRACT_Warning_2              :  '次のネットワークに展開されます:', /*It will be deployed on the following network:*/
 CONTRACT_Warning_3              :  '**契約上の機能を実行**しようとしています。', /*You are about to **execute a function on contract**.*/
 
-SEND_Helper_Contract            :  'ほとんどの場合、0のままにしておきます。', /*In most cases you should leave this as 0.*/
+SEND_Helper_Contract            :  'ほとんどの場合、0のままにしておきます。', /*In most cases you should leave this as 0. (If you are deploying a node then you must enter the correct amount of collateral)*/
 SEND_ViewOnly                   :  '自分のアドレスを指定するだけでは送信できません。お財布を解錠する必要があります。', /*You cannot send with only your address. You must use one of the other options to unlock your wallet in order to send.*/
 SEND_LoadTokens                 :  'トークン読込', /*Load Tokens*/
 SEND_CustomAddrMsg              :  '対応するメッセージ', /*A message regarding*/

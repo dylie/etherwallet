@@ -20,7 +20,7 @@ CONTRACT_Warning_1              :  'You are about to **deploy a contract**.',
 CONTRACT_Warning_2              :  'It will be deployed on the following network:',
 CONTRACT_Warning_3              :  'You are about to **execute a function on contract**.',
 
-SEND_Helper_Contract            :  'In most cases you should leave this as 0.',
+SEND_Helper_Contract            :  'In most cases you should leave this as 0. (If you are deploying a node then you must enter the correct amount of collateral)',
 SEND_ViewOnly                   :  'You cannot send with only your address. You must use one of the other options to unlock your wallet in order to send.',
 SEND_LoadTokens                 :  'Load Tokens',
 SEND_CustomAddrMsg              :  'A message regarding',
