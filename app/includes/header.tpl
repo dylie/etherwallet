@@ -4,44 +4,44 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>XERO Web Wallet</title>
-  <meta property="og:title" content="wallet.xerom.org: Your Key to Xerom">
-  <meta property="og:site_name" content="wallet.xerom.org: Your Key to Xerom">
-  <meta name="twitter:title" content="wallet.xerom.org: Your Key to Xerom">
-  <meta name="apple-mobile-web-app-title" content="wallet.xerom.org: Your Key to Xerom">
-  <link href="https://wallet.xerom.org" rel="canonical">
-  <meta content="https://wallet.xerom.org" property="og:url">
-  <meta content="https://wallet.xerom.org" name="twitter:url">
+  <title>Ether-1 Web Wallet</title>
+  <meta property="og:title" content="wallet.ether1.org: Your Key to Ether-1">
+  <meta property="og:site_name" content="wallet.ether1.org: Your Key to Ether-1">
+  <meta name="twitter:title" content="wallet.ether1.org: Your Key to Ether-1">
+  <meta name="apple-mobile-web-app-title" content="wallet.ether1.org: Your Key to Ether-1">
+  <link href="https://wallet.ether1.org" rel="canonical">
+  <meta content="https://wallet.ether1.org" property="og:url">
+  <meta content="https://wallet.ether1.org" name="twitter:url">
   <link rel="stylesheet" href="css/etherwallet-master.min.css">
   <script type="text/javascript" src="js/etherwallet-static.min.js"></script>
   <script type="text/javascript" src="js/etherwallet-master.js"></script>
-  <meta name="description" content="wallet.xerom.org is a free, open-source, client-side interface for generating Xerom wallets & more. Interact with the Xerom blockchain easily & securely.">
-  <meta property="og:description" content="Free, open-source, client-side Xerom wallet. Enabling you to interact with the blockchain easily & securely.">
-  <meta name="twitter:description" content="Free, open-source, client-side Xerom wallet. Enabling you to interact with the blockchain easily & securely.">
+  <meta name="description" content="wallet.ether1.org is a free, open-source, client-side interface for generating Ether-1 wallets & more. Interact with the Ether-1 blockchain easily & securely.">
+  <meta property="og:description" content="Free, open-source, client-side Ether-1 wallet. Enabling you to interact with the blockchain easily & securely.">
+  <meta name="twitter:description" content="Free, open-source, client-side Ether-1 wallet. Enabling you to interact with the blockchain easily & securely.">
   <meta name="robots" content="index,follow">
   <meta name="googlebot" content="index,follow">
   <meta name="google-site-verification" content="IpChQ00NYUQuNs_7Xs6xlnSdzalOlTUYbBsr8f7OpvM" />
   <link href="images/fav/favicon.ico" rel="shortcut icon">
   <meta name="msapplication-config" content="images/fav/browserconfig.xml">
   <meta name="theme-color" content="#308968">
-  <meta property="og:url" content="https://wallet.xerom.org" />
+  <meta property="og:url" content="https://wallet.ether1.org" />
   <script type="application/ld+json">
     {
       "@context": "http://schema.org",
       "@type": "Organization",
-      "name": "Wallet.xerom.org",
-      "legalName": "Xerom",
-      "url": "https://wallet.xerom.org/",
+      "name": "Wallet.ether1.org",
+      "legalName": "Ether-1",
+      "url": "https://wallet.ether1.org/",
       "contactPoint": [{
         "@type": "ContactPoint",
-        "email": "admin@xerom.org",
-        "url": "https://xerom.org",
+        "email": "admin@ether1.org",
+        "url": "https://ether1.org",
         "contactType": "customer service"
       }],
-      "logo": "https://wallet.xerom.org/images/myetherwallet-logo.png",
-      "description": "wallet.xerom.org is a free, open-source, client-side interface for generating Xerom wallets &amp; more. Interact with the Xerom blockchain easily &amp; securely.",
+      "logo": "https://wallet.ether1.org/images/myetherwallet-logo.png",
+      "description": "wallet.ether1.org is a free, open-source, client-side interface for generating Ether-1 wallets &amp; more. Interact with the Ether-1 blockchain easily &amp; securely.",
       "sameAs": [
-        "https://wallet.xerom.org/",
+        "https://wallet.ether1.org/",
       ]
     }
   </script>
@@ -66,7 +66,7 @@
     @@if (site === 'mew' ) {
     <div class="small announcement announcement-mew">
       <div clas="container">
-        DON'T GET PHISHED, please! 🎣 Thank you! 🤗 Make sure you're on https://wallet.xerom.org
+        DON'T GET PHISHED, please! 🎣 Thank you! 🤗 Make sure you're on https://wallet.ether1.org
       </div>
     </div>
     }
